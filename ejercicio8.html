@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="/js/ejercicio8.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</html>
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular precio audífonos</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg,#0a0f1b, #041e2f, #003344 );
+        }
+        .table th {
+            background-color: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="card shadow-lg">
+              <h3 class="mb-4">Cálculo de Audífonos In Ear</h3>
+            <div class="mb-3">
+          <label class="form-label">Cantidad de audífonos:</label>
+          <input type="number" id="cantidad" class="form-control">
+        </div>
+
+     <button class="btn btn-primary w-100" onclick="calcularAudifonos()">
+        Calcular total
+      </button>
+
+    <div id="resultado" class="alert alert-info mt-3"></div>
+</div>
+
+<script>
+    function calcularAudifonos() {
+        const cantidad = parseInt(document.getElementById("cantidad").value);
+
+        if (isNaN(cantidad) || cantidad <= 0) {
+            document.getElementById("resultado").innerHTML =
+                "Ingrese una cantidad válida";
+            return;
+        }
+
+        let precioUnitario = cantidad >= 1000 ? 49850 : 71290;
+        let total = cantidad * precioUnitario;
+
+        document.getElementById("resultado").innerHTML =
+            `Total a pagar es: $ ${total.toLocaleString("es-CO")}`;
+    }
+</script>
