@@ -31,9 +31,6 @@ label {
     color: #ffffff;
 }
 
-
-
-
 button {
     width: 100%;
     padding: 10px;
@@ -51,8 +48,8 @@ h1{
     color: rgb(255, 255, 255);
 }
 h1:hover{
-    transition: 2.0s;
-    transform: 2.0s;
+    transition: 1.0s;
+    transform: 1.0s;
     background-color: rgb(63, 177, 223);
     color: white;
 

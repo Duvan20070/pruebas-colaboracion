@@ -4,17 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba | Colaboración</title>
-
+    <title>Ejercicio Par o Impar</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/general.css">
 </head>
 
 <body>
 
-
     <header>
-        <h1 class="text-center mt-2 mb-3">Pruebas | Colaboración</h1>
+        <h1 class="text-center mt-2 mb-3">Ejercicio #11</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -22,6 +20,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <li><a class="dropdown-item" href="index.html">Inicio</a></li>
                 <li><a class="dropdown-item" href="ejercicio1.html">Ejercicio 1</a></li>
                 <li><a class="dropdown-item" href="ejercicio2.html">Ejercicio 2</a></li>
                 <li><a class="dropdown-item" href="ejercicio3.html">Ejercicio 3</a></li>
@@ -36,39 +35,28 @@
                 <li><a class="dropdown-item" href="ejercicio12.html">Ejercicio 12</a></li>
                 <li><a class="dropdown-item" href="ejercicio13.html">Ejercicio 13</a></li>
                 <li><a class="dropdown-item" href="ejercicio14.html">Ejercicio 14</a></li>
-                </ul>
-                </li>
-                </ul>
-            </div>
+
             </div>
         </nav>
     </header>
 
+    <div class="container mt-4">
 
+        <h3>Verificar si un número es Par o Impar</h3>
 
-    <section class="container text-center mb-5">
-        <h2 class="fw-bold">Bienvenido</h2>
-        <p class="mt-2">
-            Esta es la barra de navegacion para accceder a cada Ejercicio (1-14)
-        </p>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" class="form-control">
 
+        <button class="btn btn-primary mt-3" onclick="verificar()">Resultado</button>
 
-        <div class="card shadow-sm mt-4 mb-4 mx-auto" style="max-width: 500px;">
-            <div class="card-body">
-                <h5 class="card-title fw-bold">Datos de los desarrollador</h5>
-                <p class="card-text mt-3">
-                <p>Nombre: Duvan Alejandro Saavedra Collazos</p>
-                <p>Nombre: Hellen Estefania Ruiz Buitron</p>
-                <p>Correo: duvanalejandrosaaved@gmail.com</p>
-                <p>Correo: estefany25rb@gmail.com
-                <p>Proyecto: Prueba Colaborativa</p>
-                <p>Programa: Analisis y Desarrollo de Software</p>
-                <p>Ficha: 3176243</p>
-            </div>
-        </div>
-    </section>
+        <p class="mt-3 fw-bold" id="resultado"></p>
+
+    </div>
     <footer>Duvan Alejandro Saavedra Collazos | Hellen Estefania Ruiz Buitron</footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
 
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ejercicio10.js"></script>
+
+</body>
 </html>
