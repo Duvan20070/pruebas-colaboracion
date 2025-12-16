@@ -5,7 +5,7 @@ let numero3 = parseInt(document.getElementById("numero3").value);
 
 
 if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)) {
-document.getElementById("resultado").textContent = "Por favor, ingrese los tres números correctamente.";
+document.getElementById("resultado").innerHTML = "Por favor, ingrese los tres números correctamente.";
 return;
 }
 
@@ -23,5 +23,5 @@ mayor = numero3;
 }
 
 
-document.getElementById("resultado").textContent = "El número " + mayor + " es el mayor";
+document.getElementById("resultado").innerHTML = "El número " + mayor + " es el mayor";
 }

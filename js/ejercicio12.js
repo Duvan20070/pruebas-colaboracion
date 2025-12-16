@@ -5,7 +5,7 @@ function clasificarTemperatura() {
     if (isNaN(temp)) {
         resultado.classList.remove("d-none");
         resultado.classList.add("alert-danger");
-        resultado.textContent = "Error: debes ingresar un número válido.";
+        resultado.innerHTML = "Error: debes ingresar un número válido.";
         return;
     }
 
@@ -29,5 +29,5 @@ function clasificarTemperatura() {
     resultado.classList.add("alert-info");
 
     // Ejemplo de uso de caracteres de escape en una cadena
-    resultado.textContent = "Resultado:\n" + mensaje.replace("\n", "\\n");
+    resultado.innerHTML = "Resultado:\n" + mensaje.replace("\n", "\\n");
 }
